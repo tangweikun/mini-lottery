@@ -1,8 +1,5 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
+  "pages": ["pages/ssq/ssq", "pages/index/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -17,7 +14,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/ssq/ssq",
         "text": "双色球"
       },
       {
