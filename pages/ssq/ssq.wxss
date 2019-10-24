@@ -39,9 +39,9 @@ page {
   background: red;
   border-radius: 50%;
   color: #fff;
-  width: 56rpx;
+  width: 60rpx;
   text-align: center;
-  line-height: 56rpx;
+  line-height: 60rpx;
   font-weight: bold;
 }
 

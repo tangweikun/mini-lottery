@@ -3,6 +3,7 @@ const app = getApp();
 Page({
   data: {
     lotteryList: [],
+    foo: '1,2,3',
   },
 
   onLoad: function() {
@@ -12,7 +13,12 @@ Page({
         'https://apis.juhe.cn/lottery/history?key=96ba11ab9a0c841e566060163bcd1128&lottery_id=ssq&page_size=5&page=1',
       success: function(res) {
         console.log(res.data.result.lotteryResList);
-        that.setData({ lotteryList: res.data.result.lotteryResList });
+        that.setData({
+          lotteryList: res.data.result.lotteryResList.map(item => ({
+            ...item,
+            lottery_res: item.lottery_res.split(','),
+          })),
+        });
       },
     });
   },

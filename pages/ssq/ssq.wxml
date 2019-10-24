@@ -9,13 +9,9 @@
       <text class='highlight_text'>奖池{{item.lottery_pool_amount}}</text>
     </view>
     <view class='bottom'>
-      <text class='ball' wx:key="{{index}}" wx:for="{{item.lottery_res.split(',')}}">{{item}}</text>
-      <!-- <text class='ball'>04</text>
-      <text class='ball'>10</text>
-      <text class='ball'>10</text>
-      <text class='ball'>10</text>
-      <text class='ball'>10</text> -->
-      <text class='ball blue'>10</text>
+      <view class="ball {{idx === 6 ? 'blue' : ''}}" wx:for-index="idx" wx:key="{{num}}" wx:for-item="num" wx:for="{{item.lottery_res}}">
+        {{num}}
+      </view>
     </view>
   </view>
 </view>
