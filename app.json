@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/ssq/ssq", "pages/dlt/dlt"],
+  "pages": ["pages/detail/detail", "pages/ssq/ssq", "pages/dlt/dlt"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

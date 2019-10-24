@@ -1,0 +1,27 @@
+<view>
+  <view class='card'>
+    <view class='top'>
+      <text class='big_font'>双色球</text>
+      <view>
+        <text class='sub_text'>{{result.lottery_no}}期</text>
+        <text class='sub_text'>{{result.lottery_date}}</text>
+      </view>
+      <text class='highlight_text'>奖池{{result.lottery_pool_amount}}</text>
+    </view>
+    <view class='bottom'>
+      <view class="ball {{idx === 6 ? 'blue' : ''}}" wx:for-index="idx" wx:key="{{num}}" wx:for-item="num" wx:for="{{lotteryRes}}">
+        {{num}}
+      </view>
+    </view>
+  </view>
+  <view class="row">
+    <view class="cell">奖级</view>
+    <view class="cell">中奖注数</view>
+    <view class="cell">单注奖金</view>
+  </view>
+  <view class="row" wx:for="{{result.lottery_prize}}" wx:key="{{index}}">
+    <view class="cell">{{item.prize_name}}</view>
+    <view class="cell">{{item.prize_num}}</view>
+    <view class="cell">{{item.prize_amount}}</view>
+  </view>
+</view>

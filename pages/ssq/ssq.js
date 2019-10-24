@@ -10,9 +10,9 @@ Page({
     this._loadMore();
   },
 
-  onReachBottom: function() {
-    this._loadMore();
-  },
+  // onReachBottom: function() {
+  //   this._loadMore();
+  // },
 
   _loadMore: function() {
     const that = this;
