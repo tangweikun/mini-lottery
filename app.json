@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/ssq/ssq", "pages/index/index"],
+  "pages": ["pages/ssq/ssq", "pages/dlt/dlt"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -18,7 +18,7 @@
         "text": "双色球"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/dlt/dlt",
         "text": "大乐透"
       }
     ]

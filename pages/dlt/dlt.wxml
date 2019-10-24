@@ -1,0 +1,17 @@
+<view>
+  <view class='card' wx:for="{{lotteryList}}" wx:key="{{index}}">
+    <view class='top'>
+      <text class='big_font'>双色球</text>
+      <view>
+        <text class='sub_text'>{{item.lottery_no}}期</text>
+        <text class='sub_text'>{{item.lottery_date}}</text>
+      </view>
+      <text class='highlight_text'>奖池{{item.lottery_pool_amount}}</text>
+    </view>
+    <view class='bottom'>
+      <view class="ball {{idx >= 5 ? 'blue' : ''}}" wx:for-index="idx" wx:key="{{num}}" wx:for-item="num" wx:for="{{item.lottery_res}}">
+        {{num}}
+      </view>
+    </view>
+  </view>
+</view>

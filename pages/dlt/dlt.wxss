@@ -1,0 +1,50 @@
+page {
+  background: black;
+}
+
+.card {
+  margin: 20rpx;
+  background: #fff;
+  padding: 24rpx;
+  border-radius: 10rpx;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16rpx;
+}
+
+.big_font {
+  font-weight: bold;
+}
+
+.sub_text {
+  color: lightgray;
+  font-size: 28rpx;
+  margin-right: 16rpx;
+}
+
+.highlight_text {
+  color: red;
+  font-size: 28rpx;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ball {
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  width: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+
+.blue {
+  background: blue;
+}
