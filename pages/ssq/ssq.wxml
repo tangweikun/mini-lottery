@@ -1,17 +1,19 @@
 <view>
   <view class='card' wx:for="{{lotteryList}}" wx:key="{{index}}">
-    <view class='top'>
-      <text class='big_font'>双色球</text>
-      <view>
-        <text class='sub_text'>{{item.lottery_no}}期</text>
-        <text class='sub_text'>{{item.lottery_date}}</text>
+    <navigator url="/pages/detail/detail?lottery_no={{item.lottery_no}}&lottery_id={{item.lottery_id}}">
+      <view class='top'>
+        <text class='big_font'>双色球</text>
+        <view>
+          <text class='sub_text'>{{item.lottery_no}}期</text>
+          <text class='sub_text'>{{item.lottery_date}}</text>
+        </view>
+        <text class='highlight_text'>奖池{{item.lottery_pool_amount}}</text>
       </view>
-      <text class='highlight_text'>奖池{{item.lottery_pool_amount}}</text>
-    </view>
-    <view class='bottom'>
-      <view class="ball {{idx === 6 ? 'blue' : ''}}" wx:for-index="idx" wx:key="{{num}}" wx:for-item="num" wx:for="{{item.lottery_res}}">
-        {{num}}
+      <view class='bottom'>
+        <view class="ball {{idx === 6 ? 'blue' : ''}}" wx:for-index="idx" wx:key="{{num}}" wx:for-item="num" wx:for="{{item.lottery_res}}">
+          {{num}}
+        </view>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>
