@@ -1,7 +1,7 @@
 <view>
   <view class='card' wx:for="{{lotteryList}}" wx:key="{{index}}">
     <view class='top'>
-      <text class='big_font'>双色球</text>
+      <text class='big_font'>大乐透</text>
       <view>
         <text class='sub_text'>{{item.lottery_no}}期</text>
         <text class='sub_text'>{{item.lottery_date}}</text>
