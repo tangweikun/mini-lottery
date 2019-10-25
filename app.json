@@ -15,10 +15,14 @@
     "list": [
       {
         "pagePath": "pages/ssq/ssq",
+        "iconPath": "images/ssq_normal.jpeg",
+        "selectedIconPath": "images/ssq_active.jpeg",
         "text": "双色球"
       },
       {
         "pagePath": "pages/dlt/dlt",
+        "iconPath": "images/dlt_normal.jpeg",
+        "selectedIconPath": "images/dlt_active.jpeg",
         "text": "大乐透"
       }
     ]
