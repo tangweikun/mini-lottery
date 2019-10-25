@@ -1,18 +1,19 @@
 page {
-  background: black;
+  background: #F3F0D8;
 }
 
 .card {
-  margin: 20rpx;
+  margin: 40rpx 30rpx;
   background: #fff;
-  padding: 24rpx;
+  padding: 30rpx;
   border-radius: 10rpx;
+  box-shadow: 4rpx 6rpx 8rpx #BB3D71;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16rpx;
+  margin-bottom: 36rpx;
 }
 
 .big_font {
@@ -20,13 +21,13 @@ page {
 }
 
 .sub_text {
-  color: lightgray;
+  color: #999999;
   font-size: 28rpx;
   margin-right: 16rpx;
 }
 
 .highlight_text {
-  color: red;
+  color: rgba(243, 28, 24);
   font-size: 28rpx;
 }
 
@@ -36,7 +37,7 @@ page {
 }
 
 .ball {
-  background: red;
+  background: radial-gradient(circle,  rgb(243, 28, 64) 0%, rgba(252,69,237,1) 100%);
   border-radius: 50%;
   color: #fff;
   width: 60rpx;
@@ -46,5 +47,5 @@ page {
 }
 
 .blue {
-  background: blue;
+  background: radial-gradient(circle, rgba(58,156,180,1) 0%, rgba(29,92,253,1) 29%, rgba(69,157,252,1) 100%);
 }

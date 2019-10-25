@@ -3,20 +3,31 @@ const app = getApp();
 Page({
   data: {
     lotteryList: [],
+    page: 1,
   },
 
-  onLoad: function() {
+  onLoad: function () {
+    this._loadMore();
+  },
+
+  onReachBottom: function () {
+    this._loadMore();
+  },
+
+  _loadMore: function () {
     const that = this;
     wx.request({
-      url:
-        'https://apis.juhe.cn/lottery/history?key=96ba11ab9a0c841e566060163bcd1128&lottery_id=dlt&page_size=5&page=1',
-      success: function(res) {
-        console.log(res.data.result.lotteryResList);
+      url: `https://apis.juhe.cn/lottery/history?key=96ba11ab9a0c841e566060163bcd1128&lottery_id=dlt&page_size=8&page=${that.data.page}`,
+      success: function (res) {
         that.setData({
-          lotteryList: res.data.result.lotteryResList.map(item => ({
-            ...item,
-            lottery_res: item.lottery_res.split(','),
-          })),
+          lotteryList: [
+            ...that.data.lotteryList,
+            ...res.data.result.lotteryResList.map(item => ({
+              ...item,
+              lottery_res: item.lottery_res.split(','),
+            })),
+          ],
+          page: that.data.page + 1,
         });
       },
     });

@@ -2,9 +2,9 @@
   "pages": ["pages/ssq/ssq", "pages/dlt/dlt", "pages/detail/detail"],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#CAC068",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
