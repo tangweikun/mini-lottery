@@ -1,6 +1,7 @@
 <view>
-  <view class='card' wx:for="{{lotteryList}}" wx:key="{{index}}">
-    <navigator url="/pages/detail/detail?lottery_no={{item.lottery_no}}&lottery_id={{item.lottery_id}}">
+  
+    <navigator wx:for="{{lotteryList}}" wx:key="{{index}}" hover-stop-propagation="{{true}}" hover-stay-time="{{0}}" url="/pages/detail/detail?lottery_no={{item.lottery_no}}&lottery_id={{item.lottery_id}}">
+    <view class='card' >
       <view class='top'>
         <view>
           <text class='sub_text'>{{item.lottery_no}}期</text>
@@ -13,6 +14,7 @@
           {{num}}
         </view>
       </view>
+       </view>
     </navigator>
-  </view>
+ 
 </view>
